@@ -47,8 +47,8 @@ The last line, `[requirements]`, is the start of a section for you to list any o
 
 Now open `src/main.pi` and take a look:
 
-```py
-def main()
+```rs
+fn main()
     print("Hello, world!")
 ```
 
@@ -102,7 +102,7 @@ Theodora also provides a command called `theo check`. This command quickly check
 
 ```sh
 root $ theo check
-   Checking hello_theo v0.1.0
+    Checking hello_theo v0.1.0
     Finished dev [unoptimized + debuginfo] target(s) in 0.32 secs
 ```
 

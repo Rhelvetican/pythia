@@ -22,8 +22,8 @@ Next, make a source file, named `main.pi`. Pythia files always end with the `.pi
 
 Now open the `main.pi` file you just created and enter the following code:
 
-```py
-def main()
+```rs
+fn main()
     print("Hello, world!")
 ```
 
@@ -41,8 +41,8 @@ In the command, we passed in the `--execute` flag to run the program after it's 
 Let’s review this `“Hello, world!”` program in detail. We will go step by step.
 The first part of the program is:
 
-```py
-def main()
+```rs
+fn main()
 ```
 
 These lines define a function named `main`. The `main` function is special: it is always the first code that runs in every executable Pythia program. Here, the first line declares a function named `main` that has no parameters and returns nothing. If there were parameters, they would go inside the parentheses `()`.
@@ -51,7 +51,7 @@ The body of a function is determined by it's indentation, similar to a Python pr
 
 The body of the `main` function holds the following code:
 
-```py
+```rs
     print(“Hello, world!”)
 ```
 
