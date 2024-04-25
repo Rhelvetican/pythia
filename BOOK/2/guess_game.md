@@ -248,6 +248,42 @@ fn main()
                 break
 ```
 
-This time, when the user input a non-number input, the loop will simply repeat instead of continuing.
+This time, when the user input a non-number input, the loop will simply advance to the next iteration.
+
+#### Handling input error
+
+```rs
+use std.[io.input, cmp.Ordering]
+use random.int.randint
+
+fn main()
+    secret = randint(1, 101)
+    loop
+        guess = match i32(
+            match input("Please enter your guess: ")
+                case Ok(value)
+                    value
+                case Err(e)
+                    continue
+        )
+            case Ok(value)
+                value
+            case Err(e)
+                continue
+        print("\nYou have guessed {guess}\n")
+        print("The secret number is {secret}")
+        match guess.cmp(secret)
+            case Greater
+                print("Too big!")
+            case Less
+                print("Too small!")
+            case Equal
+                print("You win!")
+                break
+```
+
+This time, when the program fails to read from player's input, the loop will also just simply advance to the next iteration.
+
+## Conclusion
 
 At this point, you’ve successfully built the guessing game. Congratulations!
